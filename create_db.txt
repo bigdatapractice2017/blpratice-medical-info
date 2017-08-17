@@ -1,23 +1,23 @@
 create database plocal:/pypdata/orientdb/databases/cnys
 connect plocal:/pypdata/orientdb/databases/cnys admin admin
 
-create class Person extends V
-create class Food extends V
-create class Disease extends V
-create class Element extends V
-create class Symptom extends V
-create class Season extends V
-create class Cookbook extends V
-create class Function extends V
-create class PicPath extends V
-create class Taboo extends V
+create class v_Person extends V
+create class v_Food extends V
+create class v_Disease extends V
+create class v_Element extends V
+create class v_Symptom extends V
+create class v_Season extends V
+create class v_Cookbook extends V
+create class v_Function extends V
+create class v_PicPath extends V
+create class v_Taboo extends V
 
-create class Alias extends E
-create class Component extends E
-create class Cook  extends E
-create class Food-Function extends E
-create class Cookbook-Function extends E
-create class disease-Symptom  extends E
+create class e_HasAlias extends E
+create class e_ComponentOf extends E
+create class e_CookWith  extends E
+create class e_HasFunction extends E
+
+create class e_HasSymptom  extends E
 create class Food-PicPath extends E
 create class Cookbook-Food extends E
 create class Food-season extends E
